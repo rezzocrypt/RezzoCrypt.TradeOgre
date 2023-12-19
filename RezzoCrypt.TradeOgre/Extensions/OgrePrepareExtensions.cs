@@ -58,7 +58,7 @@ namespace RezzoCrypt.TradeOgre.Extensions
         /// Converl UnixTimeTicks to DateTime
         /// </summary>
         /// <param name="unixTimeStamp">UnixTimestamp</param>
-        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
+        public static DateTime UnixTimeStampToDateTime(long unixTimeStamp)
         {
             DateTime dateTime = new(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
             dateTime = dateTime.AddSeconds(unixTimeStamp).ToLocalTime();

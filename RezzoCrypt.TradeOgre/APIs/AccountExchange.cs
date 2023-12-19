@@ -74,7 +74,7 @@ namespace RezzoCrypt.TradeOgre.APIs
         /// <param name="side">Trade side</param>
         /// <param name="price">Order price</param>
         /// <param name="quantity">Order quantity</param>
-        public Order Create(string currency1, string currency2, TradeSide side, double price, double quantity)
+        public Order Create(string currency1, string currency2, TradeSide side, decimal price, decimal quantity)
         {
             var result = Connect.GetUrlResult<TradeOrder>(
                 side == TradeSide.Sell ? "/order/sell" : "/order/buy",

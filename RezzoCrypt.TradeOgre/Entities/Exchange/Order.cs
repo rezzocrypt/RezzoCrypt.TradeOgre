@@ -34,7 +34,6 @@ namespace RezzoCrypt.TradeOgre.Entities.Exchange
         [JsonProperty(PropertyName = "type")]
         public TradeSide Side { get; set; }
 
-
         public long Date { get; set; }
 
         public DateTime RealDate => OgrePrepareExtensions.UnixTimeStampToDateTime(Date);
